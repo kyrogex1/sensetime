@@ -7,6 +7,7 @@ export default props => {
     const [query, setQuery] = useState("https://jsonplaceholder.typicode.com/posts");
     const [data, setData] = useState({});
 
+    // Handle Query API Button
     const handleClick = () => {
         fetch(query)
         .then(response => response.json())
@@ -17,6 +18,7 @@ export default props => {
         });
     }
 
+    // Button Component for Query API Button
     const submitBtn = (
         <Button 
         color="primary" 
@@ -26,6 +28,7 @@ export default props => {
         </Button>
     )
 
+    // Renders list for Sample API
     const renderList = () => {
         const items = [
             { description : "Sample.json from task 1", url : "https://kyrogex1.github.io/json/Sensetime/sample.json"},
@@ -51,6 +54,7 @@ export default props => {
 
     }
 
+    // Generate Pretty Printed JSON Response
     const prettyPrintedText = JSON.stringify(data, null, 2);
 
     return (
