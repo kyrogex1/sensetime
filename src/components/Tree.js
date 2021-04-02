@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import 'react-tree-graph/dist/style.css';
-import Tree from 'react-tree-graph';
+import TreeGraph from 'react-tree-graph';
 
-export default props => {
+const Tree = props => {
 
     const [data, setData] = useState({ name : "root", children : []});
 
@@ -23,7 +23,7 @@ export default props => {
 
     return (
         <div>
-            <Tree
+            <TreeGraph
             data={data}
             height={500}
             width={500}
@@ -34,3 +34,6 @@ export default props => {
         </div>
     )
 }
+
+
+export default Tree

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TextField, Button, List, ListItem, ListItemText, Typography } from '@material-ui/core';
 
 
-export default props => {
+const ApiCaller = props => {
 
     const [query, setQuery] = useState("https://jsonplaceholder.typicode.com/posts");
     const [data, setData] = useState({});
@@ -79,3 +79,5 @@ export default props => {
         </div>
     )
 }
+
+export default ApiCaller;

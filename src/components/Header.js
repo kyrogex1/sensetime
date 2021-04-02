@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Box from '@material-ui/core/Box'
 
-export default props => {
+const Header = props => {
 
     return (
         <Box mb={4}>
@@ -34,3 +34,4 @@ export default props => {
     )
 }
 
+export default Header;

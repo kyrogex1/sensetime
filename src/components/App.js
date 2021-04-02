@@ -7,7 +7,7 @@ import Tree from './Tree';
 import Table from './Table';
 import ApiCaller from './ApiCaller'
 
-export default props => {
+const App = props => {
 
     return (
         <div>
@@ -21,3 +21,4 @@ export default props => {
     )
 }
 
+export default App
