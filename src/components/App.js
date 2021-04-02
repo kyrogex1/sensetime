@@ -13,8 +13,8 @@ const App = props => {
         <div>
             <HashRouter>
                 <Header />
-                <Route path="/" exact component={Tree} />
-                <Route path="/table" component={Table} />
+                <Route path="/" exact component={Table} />
+                <Route path="/tree" component={Tree} />
                 <Route path="/apiCaller" component={ApiCaller} />
             </HashRouter>
         </div>

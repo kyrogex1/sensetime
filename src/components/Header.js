@@ -19,7 +19,7 @@ const Header = props => {
                             </Link>
                         </Button>     
                         <Button color="inherit">
-                            <Link to="/table" style={{'textDecoration' : 'none', 'color' : 'inherit'}}>
+                            <Link to="/tree" style={{'textDecoration' : 'none', 'color' : 'inherit'}}>
                             Task 2
                             </Link>
                         </Button>

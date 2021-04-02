@@ -53,7 +53,7 @@ const Table = props => {
             actions={[
                 {
                     icon : "not_interested",
-                    tooltip : "Remove Duplicates",
+                    tooltip : "Remove Duplicate ppu",
                     isFreeAction : true,
                     onClick : () => {
                         const uniqueRows = _.uniqBy(data, 'ppu');

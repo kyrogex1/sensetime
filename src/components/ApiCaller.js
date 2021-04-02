@@ -74,8 +74,8 @@ const ApiCaller = props => {
             <List>
                 {renderList()}
             </List>
-            <pre>JSON Response Result</pre>
-            <pre>{ prettyPrintedText === "{}" ? "" : prettyPrintedText }</pre>
+            <pre></pre>
+            <pre>{ prettyPrintedText === "{}" ? "" : "JSON Response Result\n" + prettyPrintedText }</pre>
         </div>
     )
 }
